@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Lessons from "./pages/Lessons";
-import LessonDetail from "./pages/LessonDetail";
-import Quizzes from "./pages/Quizzes";
-import QuizPlay from "./pages/QuizPlay";
-import Forum from "./pages/Forum";
-import Login from "./pages/Login";
-import Admin from "./pages/Admin";
+import Home from "./pages/Home/Home";
+import Lessons from "./pages/Lessons/Lessons";
+import LessonDetail from "./pages/Lessons/LessonDetail";
+import Quizzes from "./pages/Quiz/Quizzes";
+import QuizPlay from "./pages/Quiz/QuizPlay";
+import Forum from "./pages/Forum/Forum";
+import Login from "./pages/Login/Login";
+import Admin from "./pages/Admin/Admin";
 
 import Navbar from "./components/Navbar";
 
