@@ -9,7 +9,6 @@ A web platform designed to help teachers learn how to use Google Classroom effec
 - Step-by-step documentation for Google Classroom
 - Instructional video content
 - User account management (for teachers)
-- Multiple-choice quizzes for knowledge testing
 - Learning progress tracking
 - Responsive design for both desktop and mobile
 
@@ -29,11 +28,11 @@ A web platform designed to help teachers learn how to use Google Classroom effec
 1. Clone the Project
 
 ```bash
-git clone https://github.com/thanh-hanh0410/google-classroom-guide.git
+git clone https://github.com/AC2070-20242/group_09.git
 cd google-classroom-guide
 
 2. Set Up MySQL with XAMPP
-Download and install XAMPP
+Download and install XAMPP https://www.apachefriends.org/download.html
 Open XAMPP Control Panel and:
   Start Apache
   Start MySQL
@@ -42,13 +41,15 @@ Create a new database named: google_classroom_guide
 Open the file server/db/db.sql, copy its contents, and paste into the SQL tab in phpMyAdmin to run it.
 
 3. Start Backend
-bash
+
+```bash
 cd server
 npm install
 node server.js
 
 4. Start Frontend
-bash
+
+```bash
 cd client
 npm install
 npm start
