@@ -6,6 +6,3 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
-const lessonRoutes = require('./routes/lesson.routes');
-
-app.use('/api/lessons', lessonRoutes);

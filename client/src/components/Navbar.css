@@ -1,0 +1,81 @@
+/* Navbar tổng thể */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #28a745;
+  border-bottom: 1px solid #96d178;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Bên trái: logo và tên website */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 12px;
+}
+
+.site-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fcfcfc;
+}
+
+/* Bên phải: các liên kết */
+.navbar-right {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #fdfbfb;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-right a:hover {
+  color: #ffffffff;
+}
+.nav-link {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #a5d6a7;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+
+
+}
+
+.nav-link i.fa-circle-user {
+  font-size: 18px;  /* Tăng số để to hơn */
+  color: #fdfdfd;      /* Tuỳ chỉnh màu nếu muốn */
+}
+
+.nav-link:hover {
+  background-color: #1b5e20;
+  color: #1b5e20;
+}
+.nav-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Khi trang hiện tại trùng với link -> highlight */
+
+
+.nav-link.active {
+  background-color: #a5d6a7; /* vàng nhạt */
+  border-radius: 8px;
+  padding: 6px 12px;
+}

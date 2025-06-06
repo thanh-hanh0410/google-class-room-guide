@@ -1,0 +1,95 @@
+.user-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-avatar-section {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #f0f0f0; /* fallback nếu ảnh lỗi */
+}
+
+.btn-upload {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-upload:hover {
+  background-color: #388e3c; /* màu xanh đậm hơn khi hover */
+}
+
+
+
+
+
+.user-form-group {
+  margin-bottom: 16px;
+}
+
+.user-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* Đảm bảo input và select cùng kích thước */
+.user-form-group input,
+.user-form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.user-button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-save,
+.btn-delete {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-save {
+  background-color: #388e3c;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}

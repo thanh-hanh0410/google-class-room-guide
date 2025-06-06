@@ -7,6 +7,7 @@ import QuizPlay from "./pages/Quiz/QuizPlay";
 import Forum from "./pages/Forum/Forum";
 import Login from "./pages/Login/Login";
 import Admin from "./pages/Admin/Admin";
+import User from "./pages/User/User";
 
 import Navbar from "./components/Navbar";
 
@@ -24,6 +25,8 @@ function App() {
           <Route path="/forum" element={<Forum />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/user" element={<User />} />
+
         </Routes>
       </div>
     </Router>

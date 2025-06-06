@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.highlight {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #28a745;
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 40px;
+  margin-top: 95px; /* Dịch xuống */
+   margin-bottom: 90px;
+}
+
+.left-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.search-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+
+
+.search-box button:hover {
+  background-color: #28a745;
+  box-shadow: 0 0 10px rgba(134, 230, 134, 0.7);
+}
+
+.cta-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.cta-btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn.start {
+  background-color: #28a745;
+}
+
+.cta-btn:hover {
+  filter: brightness(1.1);
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.single-img {
+  max-width: 90%; /* Làm ảnh to hơn */
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 60px;
+}
+
+.single-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+.left-section, .right-section {
+  animation: fadeInUp 0.7s ease-in;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === PHẦN 1: LỢI ÍCH CỦA EDUCOACH === */
+.features {
+  padding: 40px 130px;
+ margin-top: 30px; 
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-item {
+  background-color: rgba(134, 230, 134, 0.7);;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feature-item h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* === PHẦN 2: KHÓA HỌC NỔI BẬT === */
+.highlighted-courses {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: transparent;
+  max-width: 1200px;         /* ✅ Giới hạn độ rộng */
+  margin: 0 auto;             /* ✅ Căn giữa */
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;    /* ✅ Căn giữa các thẻ */
+}
+
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-card {
+  background-color: rgba(134, 230, 134, 0.7); /* giống màu phần lợi ích */
+  border-radius: 16px;
+  padding: 24px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.course-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+.course-card h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 15px;
+  color: #444;
+}
+
+.course-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.course-btn:hover {
+  background-color: #005fa3;
+}
+
+
+/* === FOOTER STYLING === */
+.footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #28a745;  /* xanh lá đậm Google Classroom */
+  color: #ffffff;
+  padding: 50px 8% 30px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-left,
+.footer-links,
+.footer-contact {
+  flex: 1 1 280px;
+  min-width: 280px;
+}
+
+.footer-left h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1.3px;
+}
+
+.footer-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fafbfa;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #a8d5a3;
+  color: #f7faf7;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #f8faf8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #a8d5a3;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #f7f9f7;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #f38c31);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 35px auto 0;
+  text-align: center;
+  font-size: 14px;
+  color: #b6d7b4;
+  border-top: 1px solid #8ab78f;
+  padding-top: 20px;
+}
